@@ -16,6 +16,8 @@ h1 {
     color: #fff;
     font-size: 2em;
     width: 100%;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -26,13 +28,25 @@ h2 {
     line-height: 24px;
     padding-bottom: 30px;
     text-align: left;
+    text-transform: capitalize;
+}
+
+h1,
+h2 {
+    font-family: Georgia;
 }
 
 p {
+    font-family: Helvetica;
+    font-size: 18px;
     color: AliceBlue;
     line-height: 1.3em;
     text-align: left;
     width: 100%;
+}
+
+P::first-line {
+    font-weight: bolder;
 }
 
 .image {
@@ -53,3 +67,22 @@ p {
     width: 60%;
 }
 
+.image {
+    background-image: url('../img/background-img.jpg');
+}
+
+.caption {
+    background-color: white;
+    opacity: 0.75;
+    font-style: italic;
+    color: black;
+}
+
+.caption a {
+    color: black;
+}
+
+.caption a:hover {
+    text-decoration-line: none;
+    color: purple;
+}
